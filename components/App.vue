@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Toopbar form './Toolbar.vue'
-import NotesList form './NotesList.vue'
+import Toopbar from './Toolbar.vue'
+import NotesList from './NotesList.vue'
 import Editor from './Editor.vue'
 
 export default {
