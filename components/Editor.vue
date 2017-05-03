@@ -1,20 +1,24 @@
 <template>
-    <div id="note-editor">
-        <textarea :value="activeNoteText" @input="editNote" class="form-control"></textarea>
-    </div>
+  <div id="note-editor">
+    <textarea
+      :value="activeNoteText"
+      @input="editNote"
+      class="form-control">
+    </textarea>
+  </div>
 </template>
 
 <script>
 import { editNote } from '../vuex/actions'
 
 export default {
-    vuex: {
-        gettters: {
-            activeNoteText: state => state.activeNote.text
-        },
-        actions: {
-            editNote
-        }
+  vuex: {
+    getters: {
+      activeNoteText: state => state.activeNote.text
+    },
+    actions: {
+      editNote
     }
+  }
 }
 </script>

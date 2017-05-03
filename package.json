@@ -4,7 +4,7 @@
   "description": "A tutorial of vuex",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot",
+    "dev": "webpack-dev-server --hot --open",
     "build": "webpack -p"
   },
   "repository": {
