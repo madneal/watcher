@@ -1,26 +1,23 @@
 {
-  "name": "vuex-notes",
+  "name": "note-app-vuejs-vuex",
   "version": "1.0.0",
-  "description": "A tutorial of vuex",
+  "description": "A notes application built using VueJs and Vuex",
   "main": "index.js",
-  "scripts": {
-    "dev": "webpack-dev-server --hot --open",
-    "build": "webpack -p"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neal1991/vuex-notes.git"
+    "url": "https://github.com/coligo-io/notes-app-vuejs-vuex.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/neal1991/vuex-notes/issues"
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot",
+    "build": "webpack -p"
   },
-  "homepage": "https://github.com/neal1991/vuex-notes#readme",
-  "dependencies": {
-    "vue": "^2.3.0",
-    "vuex": "^2.3.1"
-  },
+  "keywords": [
+    "vuejs",
+    "vuex",
+    "notes"
+  ],
+  "author": "Fady Makram",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.7.6",
     "babel-loader": "^6.2.4",
@@ -34,5 +31,9 @@
     "vue-style-loader": "^1.0.0",
     "webpack": "^1.12.15",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "vue": "^1.0.21",
+    "vuex": "^0.6.2"
   }
 }
