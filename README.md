@@ -1,2 +1,2 @@
 # vuex-notes
-A tutorial of vuex
+I am going to build a notes client belong to yourself.
