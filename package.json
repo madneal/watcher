@@ -7,6 +7,10 @@
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14"
   },
+  "description": "A note app belong to yourself",
+  "author": {
+    "name": "neal1991"
+  },
   "homepage": "./",
   "main": "src/electron-starter.js",
   "scripts": {
@@ -23,9 +27,6 @@
   },
   "build": {
     "appId": "com.electron.electron-with-create-react-app",
-    "win": {
-      "iconUrl": "https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-256.png"
-    },
     "directories": {
       "buildResources": "public"
     }
