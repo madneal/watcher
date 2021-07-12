@@ -1,0 +1,32 @@
+{
+    "name": "Request forwarder",
+    "short_name": "r-fowarder",
+    "description": "转发 http 请求",
+    "version": "0.0.8",
+    "icons": {
+        "16": "icons/request-16.png",
+        "48": "icons/request-48.png",
+        "64": "icons/request-64.png",
+        "128": "icons/request.png"
+    },
+    "permissions": [
+        "webRequest",
+        "storage",
+        "webRequestBlocking",
+        "browsingData",
+        "<all_urls>"
+    ],
+    "browser_action": {
+        "default_title": "r-forwarder",
+        "default_icon": "icons/request.png"
+    },
+    "background": {
+        "scripts": [
+            "./js/background.js"
+        ],
+        "persistent": true
+    },
+    "manifest_version": 2,
+    "homepage_url": "https://github.com/neal1991/r-forwarder",
+    "options_page": "./pages/options.html"
+}

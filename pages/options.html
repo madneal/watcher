@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>R-forwarder配置页面</title>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <script src="../lib/materialize.min.js"></script>
+</head>
+
+<body>
+    <div class="form">
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="service" type="text">
+                        <label for="service">服务地址</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="agentId" type="text" class="validate" required="" aria-required="true"
+                        placeholder="请填写 UM 账号">
+                        <label for="agentId" data-error="wrong" data-success="right">UM 号</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <select multiple>
+                    <option value="main_frame">main_frame</option>
+                    <option value="sub_frame">sub_frame</option>
+                    <option value="stylesheet">stylesheet</option>
+                    <option value="script">script</option>
+                    <option value="image">image</option>
+                    <option value="font">font</option>
+                    <option value="object">object</option>
+                    <option value="xmlhttprequest">xmlhttprequest</option>
+                    <option value="ping">ping</option>  
+                    <option value="csp_report">csp_report</option>
+                    <option value="media">media</option>
+                    <option value="websocket">websocket</option>
+                    <option value="other">other</option>
+                </select>
+                <label>选择资源类型</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <textarea id="urls" class="materialize-textarea" placeholder="https://www.baidu.com/*;https://google.com/*;"></textarea>
+                <label for="urls">网站过滤</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s3 offset-s4">
+                <button class="btn waves-effect waves-light save" type="submit" name="action">
+                    保存
+                </button>
+                <button class="btn cancel">
+                    取消
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/options.js"></script>
+</body>
+
+</html>
